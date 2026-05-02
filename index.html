@@ -469,6 +469,42 @@
         <span id="toast-message">Item added to cart!</span>
     </div>
 
+    <!-- ═══════════ CHATBOT WIDGET ═══════════ -->
+    <div id="chatbot-widget">
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <span class="chatbot-header-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    Chat with us
+                </span>
+                <button class="chatbot-close-btn" id="chatbot-close-btn" aria-label="Close chat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <iframe
+                src="https://www.chatbase.co/chatbot-iframe/FTYH_rY670BherjkpVVxs"
+                width="100%"
+                style="height: 100%; border: none;"
+                allow="microphone"
+            ></iframe>
+        </div>
+        <button class="chatbot-toggle-btn" id="chatbot-toggle-btn" aria-label="Open chat">
+            <!-- Chat icon (shown when closed) -->
+            <svg class="chatbot-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <!-- Close icon (shown when open) -->
+            <svg class="chatbot-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            <span class="chatbot-pulse"></span>
+        </button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
